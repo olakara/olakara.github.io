@@ -18,8 +18,7 @@ author:         'Abdel Raoof Olakara'
 # Google Analytics
 gahandler: 'UA-52149651-1'
 
-# 
-Blog Configurations
+# Blog Configurations
 
 paginate: 5 # Posts per page on the blog index
 paginate_path: "/blog/page:num"

@@ -1,24 +1,36 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+markdown: redcarpet
+pygments: true
 
 # Permalinks
-permalink:        pretty
+permalink:        /blog/:year/:month/:day/:title/
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A Sample blog project'
+title:            Jekyll Metro
+tagline:          'A Metro theme for Jekyell'
+description:      'A Sample blog using JekyllMetro'
 url:              http://olakara.github.io
 
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+# Author Details
+author:         'Abdel Raoof Olakara'
 
-paginate:         5
 
+# Google Analytics
+gahandler: 'UA-52149651-1'
+
+# 
+Blog Configurations
+
+paginate: 5 # Posts per page on the blog index
+paginate_path: "/blog/page:num"
+destination: ./_site
+navigation:
+- text: Blog
+  url: /blog/
+- text: Archive
+  url: /archive/
+- text: About
+  url: /about/
+  
 # Custom vars
-version:          2.0.0
-
-github:
-  repo:           https://github.com/poole/hyde
+version:          0.2.0

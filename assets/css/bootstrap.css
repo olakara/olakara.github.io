@@ -13,6 +13,7 @@ html {
 }
 body {
   margin: 0;
+  height: 100%;
 }
 article,
 aside,
@@ -43,13 +44,7 @@ audio:not([controls]) {
 template {
   display: none;
 }
-a {
-  background: transparent;
-}
-a:active,
-a:hover {
-  outline: 0;
-}
+
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -293,7 +288,6 @@ a {
 a:hover,
 a:focus {
   color: #0059b3;
-  text-decoration: underline;
 }
 a:focus {
   outline: thin dotted;
@@ -3642,8 +3636,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .label {
   display: inline;
   padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: bold;
+  font-size: 100%;
   line-height: 1;
   color: #ffffff;
   text-align: center;
@@ -3712,13 +3705,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 3px 7px;
   font-size: 13px;
   font-weight: bold;
-  color: #ffffff;
+  /*color: #ffffff;*/
   line-height: 1;
   vertical-align: baseline;
   white-space: nowrap;
   text-align: center;
-  background-color: #007fff;
-  border-radius: 10px;
+  border: 2px solid #fff;
+  /*background-color: #007fff;*/
+  border-radius: 50%;
 }
 .badge:empty {
   display: none;

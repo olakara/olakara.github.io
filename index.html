@@ -1,76 +1,147 @@
 ---
+
 layout: master
+
 title: Home
+
 ---
 
+
+
 <div class="container">
-	
-	<header class="clearfix header">
-		<h1>Abdel Raoof Olakara</h1>				
-	</header>		
+
+	<div class="hidden-xs" style="margin-top:80px"></div>
+
+	<header class="row">
+
+	  <div class="col-sm-6 col-md-12" style="margin-top:25px;margin-bottom:25px">
+
+	    <h1>{{site.title}}</h1>
+
+	  </div>
+
+	</header>			
+
+
 
 	<nav>			  
-		<div class="row">
-			<div class="col-sm-4">
+
+		<div class="row" style="margin-top:25px">
+
+ 			<div class="col-md-4 col-sm-6 col-xs-12">
+
 				<a href="about/">
+
 					<div class="tile purple profile">
+
 						<h2 class="title">About Me</h2>
-						<p>Hello Purple, this is a colored tile.</p>
+
+						<p>Hello World, I am Abdel Raoof.</p>
+
 					</div>
+
 				</a>
-			</div>
-			<div class="col-sm-2">
-				<a href="#">
+
+		    </div>
+
+			<div class="col-md-2 col-sm-3 col-xs-6">
+
+				<a href="resume/">
+
 					<div class="tile red">
-						<h2 class="title">Resume<br/><i class="fa fa-file-text-o fa-2">&nbsp;</i></h2>        	
+
+						<b> Resume </b>
+
+						<div class="icon icon-resume">&nbsp;</div>
+
 					</div>
+
 				</a>
+
 			</div>
-			<div class="col-sm-2">
+
+			<div class="col-md-2 col-sm-3 col-xs-6">
+
 				<a href="blog/">
+
 					<div class="tile orange">
-						<h2 class="title">Blog<br/><i class="fa fa-bold fa-2">&nbsp;</i></h2>
+
+						<b>Blog</b>
+
+						<div class="icon icon-blog">&nbsp;</div>
+
 					</div>
+
 				</a>
+
 			</div>
+
 		</div>
+
 					
-		<div class="row">
-			<div class="col-sm-2">
-				<a href="http://ae.linkedin.com/in/olakara/">
+
+		<div class="row" style="margin-bottom:25px">
+
+			<div class="col-md-2 col-sm-3 col-xs-6">
+
+				<a href="{{site.linkedin}}">
+
 					<div class="tile blue">
-						<h2 class="title fa fa-linkedin fa-4">&nbsp;</h2>        
+
+						<div class="icon icon-linkedin">&nbsp;</div>        
+
 					</div>
+
 				</a>
+
 			</div>
-			<div class="col-sm-2">
-				<a href="http://twitter.com/olakara">
+
+			<div class="col-md-2 col-sm-3 col-xs-6">
+
+				<a href="{{site.twitter}}">
+
 			  		<div class="tile blue">
-						<h2 class="title fa fa-twitter fa-4">&nbsp;</h2>					
+
+						<div class="icon icon-twitter">&nbsp;</div> 				
+
 			  		</div>
+
 			  	</a>
+
 			</div> 
-			<div class="col-sm-2">
-				<a href="http://www.facebook.com/olakara">
+
+			<div class="col-md-2 col-sm-3 col-xs-6">
+
+				<a href="{{site.facebook}}">
+
 					<div class="tile blue">
-						<h2 class="title fa fa-facebook fa-4">&nbsp;</h2>         
+
+						<div class="icon icon-facebook">&nbsp;</div>         
+
 			  		</div>
+
 			  	</a>
+
 			</div>    
-			<div class="col-sm-2">
-				<a href="https://plus.google.com/100425464897246255887/">
+
+			<div class="col-md-2 col-sm-3 col-xs-6">
+
+				<a href="{{site.gplus}}">
+
 					<div class="tile red">
-						<h2 class="title fa fa-google-plus fa-4">&nbsp;</h2>
+
+						<div class="icon icon-googleplus">&nbsp;</div> 
+
 			  		</div>
+
 			  	</a>
+
 			</div>				
-			<div class="col-sm-2">
+
+			<div class="col-md-2 col-sm-3 col-xs-6">
+
 				<a href="rss.xml/">
-					<div class="tile orange">
-						<h2 class="title fa fa-rss fa-4">&nbsp;</h2>
-			  		</div>
-			  	</a>
-			</div>
-		</div>
-	</nav>
-</div>
+
+					<div class="tile orange ">
+
+						<div class="icon icon-RSS

@@ -1,35 +1,31 @@
-# Dependencies
-markdown: redcarpet
-pygments: true
+# Configurations
+markdown: kramdown
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+highlighter: pygments
 
 # Permalinks
-permalink:        /blog/:year/:month/:day/:title/
+permalink:        /blog/:year/:month/:day/:title
 
 # Setup
-title:            Jekyll Metro
+title:            'Jekyll Metro'
 tagline:          'A Metro theme for Jekyell'
-description:      'A Sample blog using JekyllMetro'
-url:              http://olakara.github.io
+description:      'A Sample blog using Jekyll Metro'
+url:              'http://blog-olakara.rhcloud.com'
 
 # Author Details
 author:         'Abdel Raoof Olakara'
-
+linkedin:       'https://ae.linkedin.com/in/olakara/'
+twitter:        'https://twitter.com/olakara'
+facebook:       'https://www.facebook.com/olakara'
+gplus:          'https://plus.google.com/100425464897246255887/'
 
 # Google Analytics
 gahandler: 'UA-52149651-1'
 
 # Blog Configurations
-
-paginate: 5 # Posts per page on the blog index
-paginate_path: "/blog/page:num"
+paginate: 2 # Posts per page on the blog index
+paginate_path: '/blog/page:num'
 destination: ./_site
-navigation:
-- text: Blog
-  url: /blog/
-- text: Archive
-  url: /archive/
-- text: About
-  url: /about/
-  
+
 # Custom vars
-version:          0.2.0
+version:          0.7

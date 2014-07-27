@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Tags - SharePoint
-description: All articles with SharePoint tag assigned
+title: Tags - Jekyll
+description: All articles with Jekyll tag assigned
 theme: red
 ---
     <div class="row">
@@ -25,15 +25,15 @@ theme: red
     <div class="row">
         <div class="col-md-12">
             <section>
-                <h3>SharePoint</h3>
+                <h3>Jekyll</h3>
                 <ul>
                     {% for post in site.posts %}
                         {% for otag in post.tags %}
-                            {% if otag == 'SharePoint' %}
+                            {% if otag == 'Jekyll' %}
                                 <li class="alink"><a href="{{ post.url }}" class="red-link">{{ post.title }}</a></li>
                             {% endif %}
                         {% endfor %}
-                    {% endfor %}    
+                    {% endfor %}
                 </ul>
             </section>
         </div>

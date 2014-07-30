@@ -7,7 +7,7 @@ tags: SharePoint
 
 After configuring my PerformancePoint Service on SharePoint 2013. This error hit me when trying to create a new data source from Dashboard Designer.
 
- <img class="img-responsive image-center thumbnail" src="{{site.url}}/img/pps-issue.png" alt="PerformancePoint Service Issue" />
+ <img class="img-responsive image-center thumbnail" src="{{site.url}}/img/pps-issue/pps-issue.png" alt="PerformancePoint Service Issue" />
 
 Here are the steps to make sure you have your PerformancePoint service configured properly.
 

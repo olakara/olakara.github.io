@@ -41,7 +41,7 @@ tags: Jekyll
 
  **6. Author you articles in Markdown**
 
-  Markdown needs no introduction. Developers these days are familiar with mardown as many sites like StackOverflow
+  Markdown needs no introduction. Developers these days are familiar with mardown as many sites like StackOverflow use it. It provides a minimalist writing system that you use for authoring using any text editor and later convert to HTML.
 
 ##Jekyll is not the silver lining
 

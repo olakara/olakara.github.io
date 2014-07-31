@@ -39,7 +39,7 @@ tags: Jekyll
   Even though Jekyll sites are static, you are provided with a simple templating system based on [Liquid](http://liquidmarkup.org/). Its easy to grasp and learn even without any experience in Ruby.
   You will find that Jekyll is a "blog-aware" platform and recognizes posts, tags, categories. The templating framework provides you all the features and all you have to do is implement your imagination!
 
- **6. Author you articles in Markdown**
+ **6. Author your articles in Markdown**
 
   Markdown needs no introduction. Developers these days are familiar with mardown as many sites like StackOverflow use it. It provides a minimalist writing system that you use for authoring using any text editor and later convert to HTML.
 
@@ -54,11 +54,12 @@ So, Jekyll is may not be the right solution for all website!
 
 My urge made me look for CMS solutions other than Blogger. The best bet was Wordpress (for many obvious reasons). But then I came across many developers and githubbers using static sites!! In less than an hour, I was up and running my [development site on OpenShift](http://blog-olakara.rhcloud.com).
 I decided to setup my own rules and here it is:
-1. Make the site using Jekyll static site generator.
-2. Get a domain for myself.
-3. Make my own theme for the site.
-4. Open source the theme under MIT License.
-5. Publish more articles than before (When I was hosting my blog on Blogger).
+
+1.Make the site using Jekyll static site generator.
+2.Get a domain for myself.
+3.Make my own theme for the site.
+4.Open source the theme under MIT License.
+5.Publish more articles than before (When I was hosting my blog on Blogger).
 
 I have fulfilled most of my promises that I made. It has been fun building the theme and functionality of site from scratch (I am not a Ruby or Liquid expert but I assure you don't have to be one to make a beautiful site).
 The theme of is freely [available on Github](https://github.com/olakara/JekyllMetro) for you to use, explore and contribute. I would like to hear your comments about this site and its theme. In coming days, I will me migrating few of my articles from my old blog.
@@ -66,8 +67,9 @@ And finally, the Jekyll Metor theme's development is not over yet. I plan to mak
 
 ##Resources
 
-Here are a few resources that I found to be helpful when I started Jekyll .
-1. Quick start guide [http://jekyllrb.com/docs/quickstart/](http://jekyllrb.com/docs/quickstart/)
-2. Go through source code of sites. You can find many sites and their source at [https://github.com/jekyll/jekyll/wiki/Sites](https://github.com/jekyll/jekyll/wiki/Sites)
+Here are a few resources that I found to be helpful when I started Jekyll.
+
+1.Quick start guide [http://jekyllrb.com/docs/quickstart/](http://jekyllrb.com/docs/quickstart/)
+2.Go through source code of sites. You can find many sites and their source at [https://github.com/jekyll/jekyll/wiki/Sites](https://github.com/jekyll/jekyll/wiki/Sites)
 
 Franky, the best resoure is going through other's site code. You get to know the best practices with live and working examples!

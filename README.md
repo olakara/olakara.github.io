@@ -7,7 +7,7 @@
  You may also use any code and solutions listed on the site. But the text content is subject to copyright of Abdel Raoof.
 
   *Site:* [abdelraoof.com](http://abdelraoof.com)
-  
+
   *Site Theme:* [Jekyll Metro](https://github.com/olakara/JekyllMetro)
 
 ## License

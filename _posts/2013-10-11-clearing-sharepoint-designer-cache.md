@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Clearing SharePoint Designer Cache
+description: Learn how to clear the SharePoint Designer 2013 cache in the right way
 date:   2013-10-11 15:30:00
 tags: SharePoint
 ---

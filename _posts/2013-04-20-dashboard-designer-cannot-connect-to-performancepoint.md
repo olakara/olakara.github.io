@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Cannot Connect to PerformancePoint Service
+description: Provides a solution to fix connection issue with Sharepoint PerformancePoint Service
 date:   2013-04-20 15:30:00
 tags: SharePoint
 ---

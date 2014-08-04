@@ -11,13 +11,21 @@ theme: red
             <section class="tags">
                 <ul class="nav nav-pills">
                     {% for tag in site.tags %}
+
+                    {% capture xtag %}
+                      {{ tag | first }}
+                    {% endcapture %}
                     <li class="red" style="margin:5px">
-                        <a href="/tags/{{ tag | first | slugize }}/"> {{ tag | first }}&nbsp;<span class="badge">{{ tag | last | size}}</span></a>
+                        {% if xtag == 'C#' %}
+                          <a href="/tags/CSharp/"> xtag&nbsp;<span class="badge">{{ tag | last | size}}</span></a>
+                        {% else %}
+                          <a href="/tags/{{ xtag }}/"> {{ xtag }}&nbsp;<span class="badge">{{ tag | last | size}}</span></a>
+                        {% endif %}
                     </li>
                     {% endfor %}
                 </ul>
             </section>
-        
+
         </div>
         <div class="col-md-2">
         </div>
@@ -31,9 +39,9 @@ theme: red
                     {{ tag[0] }}
                 {% endfor %}
             {% endcapture %}
-            
+
             {% assign sortedtags = tags | split:' ' | sort %}
-            
+
             {% for tag in sortedtags %}
                 <h3>{{tag}}</h3>
                 <ul>
@@ -43,7 +51,7 @@ theme: red
                                 <li class="alink"><a href="{{ post.url }}" class="red-link">{{ post.title }}</a></li>
                             {% endif %}
                         {% endfor %}
-                    {% endfor %}    
+                    {% endfor %}
                 </ul>
             {% endfor %}
             </section>

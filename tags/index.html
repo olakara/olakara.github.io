@@ -16,10 +16,10 @@ theme: red
                       {{ tag | first }}
                     {% endcapture %}
                     <li class="red" style="margin:5px">
-                        {% if xtag == 'C#' %}
-                          <a href="/tags/CSharp/">{{ xtag }}&nbsp;<span class="badge">{{ tag | last | size}}</span></a>
+                        {% if xtag contains 'C#' %}
+                          <a href="/tags/CSharp/">{{ tag | first }}&nbsp;<span class="badge">{{ tag | last | size}}</span></a>
                         {% else %}
-                          <a href="/tags/{{ xtag }}/">{{ xtag }}&nbsp;<span class="badge">{{ tag | last | size}}</span></a>
+                          <a href="/tags/{{ tag | first }}/">{{ tag | first }}&nbsp;<span class="badge">{{ tag | last | size}}</span></a>
                         {% endif %}
                     </li>
                     {% endfor %}

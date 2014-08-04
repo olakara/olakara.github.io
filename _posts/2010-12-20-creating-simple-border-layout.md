@@ -53,7 +53,7 @@ var panel = new Ext.Panel({
                 height: 150
 
              }]
-});
+    });
 {% endhighlight %}
 
 There are few points to remember when working with border layout. I have listed few important points:

@@ -25,6 +25,8 @@ navigation:
   url: /tags/
 - text: Archive
   url : /archive/
+- text: Search
+  url: /search/
 
 # Author Details
 author:         'Abdel Raoof Olakara'
@@ -40,9 +42,9 @@ gahandler: 'UA-53220404-1'
 disqushandler: 'abdelraoof'
 
 # Blog Configurations
-paginate: 3 # Posts per page on the blog index
+paginate: 10 # Posts per page on the blog index
 paginate_path: '/blog/page:num'
 destination: ./_site
 
 # Custom vars
-version:          0.7.6
+version:          0.7.10

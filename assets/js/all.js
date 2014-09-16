@@ -16,7 +16,116 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap requires jQuery");+func
 /*
  * Customized Jekyll Search
  */
-(function(e){e.fn.jekyllSearch=function(t){function u(){i.keyup(function(t){if(t.which===13){if(o)window.location=o[0].url}if(e(this).val().length>3){f(a(e(this).val()))}else{l()}})}function a(e){o=[];for(var t=0;t<r.length;t++){var n=r[t];for(key in n){if(n.hasOwnProperty(key)){if(n[key]instanceof Array){var i=false;for(var s=0;s<n[key].length;s++){if(n[key][s].toLowerCase().indexOf(e.toLowerCase())>=0){o.push(n);break}}}else if(n[key].toLowerCase().indexOf(e.toLowerCase())>=0){o.push(n);break}}}}return o}function f(t){l();searchResultsHeader.html(e(n.searchResultsTitle));if(t&&t.length){for(var r=0;r<t.length&&r<n.limit;r++){var i=t[r];output=n.template;output=output.replace(/\{(.*?)\}/g,function(e,t){return i[t]});searchResultsList.append(e(output))}}else{searchResultsList.children().remove();searchResultsHeader.html("");searchMessage.append(n.noResults)}}function l(){searchMessage.html("");searchResultsHeader.html("");searchResultsList.children().remove()}var n=e.extend({jsonFile:"/search.json",template:'<a href="{url}" title="{desc}">{title}</a>',searchResults:".results",searchResultsTitle:"<h4>Search results</h4>",limit:"10",noResults:"<p>Oh shucks<br/><small>Nothing found :(</small></p>"},t);var r=[],i=this,s=e(n.searchResults);searchResultsHeader=s.find(".results-title");searchResultsList=s.find(".results-list");searchMessage=e(".search-message");var o=[];if(n.jsonFile.length&&s.length){e.ajax({type:"GET",url:n.jsonFile,dataType:"json",success:function(e,t,n){r=e;u()},error:function(e,t,n){console.log("***ERROR in jekyllSearch.js***");console.log(e);console.log(t);console.log(n)}})}}})(jQuery)
+(function($) {
+    $.fn.jekyllSearch = function(options) {
+        var settings = $.extend({
+            jsonData            : [],
+            jsonFile            : '/search.json',
+            template            : '<a href="{url}" title="{title}">{title}</a>',
+            searchResults       : '.results',
+            searchResultsTitle  : '<h4>Search results</h4>',
+            limit               : '10',
+            noResults           : '<p>Oh shucks<br/><small>Nothing found :(</small></p>'
+        }, options);
+
+        var jsonData = $(settings.jsonData),
+            origThis = this,
+            searchResults = $(settings.searchResults);
+            searchResultsHeader = searchResults.find('.results-title');
+            searchResultsList = searchResults.find('.results-list');
+            searchMessage = $('.search-message');
+
+        var matches = [];
+
+
+        if(jsonData.length) {
+              registerEvent();
+        } else if(settings.jsonFile && searchResults.length){
+            $.ajax({
+                type: "GET",
+                url: settings.jsonFile,
+                dataType: 'json',
+                success: function(data, textStatus, jqXHR) {
+                    jsonData = data;
+                    registerEvent();
+                },
+                error: function(x,y,z) {
+                    console.log("***ERROR in jekyllSearch.js***");
+                    console.log(x);
+                    console.log(y);
+                    console.log(z);
+                    // x.responseText should have what's wrong
+                }
+            });
+        }
+
+        function registerEvent(){
+            origThis.keyup(function(e){
+                if(e.which === 13){
+                    if(matches)
+                        window.location = matches[0].url;
+
+                }
+                if($(this).val().length > 2){
+                    writeMatches( performSearch($(this).val()) );
+                }else{
+                    clearSearchResults();
+                }
+            });
+        }
+
+        function performSearch(str){
+            matches = [];
+
+            for (var i = 0; i < jsonData.length; i++) {
+                var obj = jsonData[i];
+                for (key in obj) {
+                    if(obj.hasOwnProperty(key)){
+                        if (obj[key] instanceof Array){
+                            var seen = false;
+                            for (var j = 0; j < obj[key].length; j++){
+                                if(obj[key][j].toLowerCase().indexOf(str.toLowerCase()) >= 0){
+                                    matches.push(obj);
+                                    break;
+                                }
+                            }
+                        }else if (obj[key].toLowerCase().indexOf(str.toLowerCase()) >= 0){
+                            matches.push(obj);
+                            break;
+                        }
+                    }
+                }
+            }
+            return matches;
+        }
+
+        function writeMatches(m){
+            clearSearchResults();
+            searchResultsHeader.html( $(settings.searchResultsTitle));
+
+            if(m && m.length){
+                for (var i = 0; i < m.length && i < settings.limit; i++) {
+                    var obj = m[i];
+                    output = settings.template;
+                    output = output.replace(/\{(.*?)\}/g, function(match, property) {
+                        return obj[property];
+                    });
+                    searchResultsList.append($(output));
+                }
+            }else{
+                searchResultsList.children().remove();
+                searchResultsHeader.html('');
+                searchMessage.append(settings.noResults);
+            }
+        }
+        function clearSearchResults(){
+            searchMessage.html('');
+            searchResultsHeader.html('');
+            searchResultsList.children().remove();
+
+        }
+    }
+}(jQuery));
 
 /*
  * app.js minified!

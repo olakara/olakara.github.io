@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Configuting Namecheap DNS for Github pages
+title:  Configuring Namecheap DNS for Github pages
 description: Learn how to configure Namecheap DNS for Github pages
 date:   2014-09-20
 tags: Github

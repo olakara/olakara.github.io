@@ -26,7 +26,11 @@ bloghome: true
 		              <div class="tags">
                   {% if post.tags %}
               		{% for tag in post.tags %}
-                    <a href="/tags/{{tag}}"><span class="label btn-orange">{{tag}}</span></a>
+                    {% if tag == 'C#'%}
+                      <a href="/tags/CSharp"><span class="label btn-orange">{{tag}}</span></a>
+                    {% else %}
+                      <a href="/tags/{{tag}}"><span class="label btn-orange">{{tag}}</span></a>
+                    {% endif %}
                   {% endfor %}
            		 {% else %}
               		None

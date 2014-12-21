@@ -26,8 +26,15 @@ bloghome: true
 		              <div class="tags">
                   {% if post.tags %}
               		{% for tag in post.tags %}
-                			<a href="/tags/{{tag}}"><span class="label btn-orange">{{tag}}</span></a>
-              		{% endfor %}
+                    {% capture xtag %}
+                    {{ tag | first }}
+                    {% endcapture %}
+                    {% if xtag contains 'C#' %}
+                    <a href="/tags/CSharp/"><span class="label btn-orange">{{xtag}}</span></a>
+                    {% else %}
+                    <a href="/tags/{{xtag}}/"><span class="label btn-orange">{{xtag}}</span></a>
+                    {% endif %}
+                  {% endfor %}
            		 {% else %}
               		None
             	 {% endif %}

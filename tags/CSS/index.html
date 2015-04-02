@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Tags - Gulp
-description: All articles with Gulp tag assigned
+title: Tags - CSS
+description: All articles with CSS tag assigned
 theme: red
 ---
     <div class="row">
@@ -25,11 +25,11 @@ theme: red
     <div class="row">
         <div class="col-md-12">
             <section>
-                <h3>Github</h3>
+                <h3>CSS</h3>
                 <ul>
                     {% for post in site.posts %}
                         {% for otag in post.tags %}
-                            {% if otag == 'Gulp' %}
+                            {% if otag == 'CSS' %}
                                 <li class="alink"><a href="{{ post.url }}" class="red-link">{{ post.title }}</a></li>
                             {% endif %}
                         {% endfor %}

@@ -7,7 +7,7 @@ highlighter: pygments
 permalink:        /blog/:year/:month/:day/:title
 
 # Setup
-title:            'Abdel Raoof Olakara'
+title:            'Abdel Raoof'
 tagline:          'Tangled web dairy of Abdel Raoof'
 description:      'This is personal site of Abdel Raoof Olakara'
 url:              'http://abdelraoof.com'

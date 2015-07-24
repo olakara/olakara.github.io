@@ -8,12 +8,12 @@ layout: master
       {% include sidemenu.html %}
     </div> <!-- Side column -->
     <div class="col-md-10 col-sm-9 col-md-offset-2 col-sm-offset-3">
-      <article class="col-md-12 col-xs-12 justified">
-        <h1 class="post-title">{{ page.title }}</h1>
+      <article class="col-md-12 col-xs-12 justified" itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
         <div class="publish-tag">
-          <span class="fa fa-calendar"></span>&nbsp;Published On {{ page.date | date: "%B %d, %Y" }}
+          <span class="fa fa-calendar"></span>&nbsp;Published On <span itemprop="datePublished"> {{ page.date | date: "%B %d, %Y" }} </span>
         </div>
-        {{ content }}
+        <div itemprop="articleBody">{{ content }}</div>
         <br/>
         <span class="fa fa-tag"></span>Tags:
         {% if page.tags %}

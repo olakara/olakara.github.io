@@ -16,14 +16,9 @@ Like any amCharts, I have a simple DIV representing my chart in HTML:
 Here is what I have:
 
 <a class="jsbin-embed" href="http://jsbin.com/zumuci/1/embed?output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.34.0"></script>
+*[Looks like even with Auto-run JS checked, JSBin does not execute the scripts correctly. You might have to click on 'Run With JS' do see the proper execution! ]*
 
-Clicking on the chart displays my alert box. But what I wanted was to avoid the '*chartClick()*' being called when I click on any of the pie's slice or its legend of the chart.
-
-Here is what I achieve:
-
-<a class="jsbin-embed" href="http://jsbin.com/zumuci/5/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.1"></script>
-
-To get the desired results, you need to override a number of methods. You will have to handle clicking of slice, legend marker and legend text separately. First let's handle the legend which is done by overriding '*clickLabel()*' and '*clickMarker()*'. These methods are available as part of '*legend*' configuration. Here is a sample legend configuration object:
+Clicking on the chart displays my alert box. But what I wanted was to avoid the '*chartClick()*' being called when I click on any of the pie's slice or its legend of the chart. To get the desired results, you need to override a number of methods. You will have to handle clicking of slice, legend marker and legend text separately. First let's handle the legend which is done by overriding '*clickLabel()*' and '*clickMarker()*'. These methods are available as part of '*legend*' configuration. Here is a sample legend configuration object:
 
 {% highlight javascript linenos %}
 "legend": {
@@ -130,5 +125,10 @@ function chartClick() {
     alert('Clicked on chart.. show details');
 }
 {% endhighlight %}
+
+Here is what I achieve:
+
+<a class="jsbin-embed" href="http://jsbin.com/zumuci/5/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.1"></script>
+*[Looks like even with Auto-run JS checked, JSBin does not execute the scripts correctly. You might have to click on 'Run With JS' do see the proper execution! ]*
 
 :)

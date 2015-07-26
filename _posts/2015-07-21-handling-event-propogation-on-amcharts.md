@@ -9,7 +9,7 @@ tags: JavaScript
 amCharts is one of the best charting library available for data visualization on web pages. I have been working with it for the past few months and I must say I am pretty impressed with it. The charts I work with have been highly interactive and  recently, I had some requirements where I had to disable the event propagation on certain parts of the chart (specifically the pie chart). My requirement was to keep all existing chart interactions intact but, make the chart clickable ( like focusing on details section or open another page with detail charts).
 
 Like any amCharts, I have a simple DIV representing my chart in HTML:
-{% hilight html linenos %}
+{% highlight javascript linenos %}
   <div id="chartdiv" onclick="chartClick()"></div>
 {% endhighlight %}
 
@@ -127,9 +127,7 @@ var chart = AmCharts.makeChart("chartdiv", {
 });
 
 function chartClick() {
-
     alert('Clicked on chart.. show details');
-
 }
 {% endhighlight %}
 

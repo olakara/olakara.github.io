@@ -25,7 +25,7 @@ Here is what I achieve:
 
 To get the desired results, you need to override a number of methods. You will have to handle clicking of slice, legend marker and legend text separately. First let's handle the legend which is done by overriding '*clickLabel()*' and '*clickMarker()*'. These methods are available as part of '*legend*' configuration. Here is a sample legend configuration object:
 
-{% hilight javascript linenos %}
+{% highlight javascript linenos %}
 "legend": {
     "markerType": "circle",
     "position": "right",
@@ -50,7 +50,7 @@ To get the desired results, you need to override a number of methods. You will h
 
 The '*chart*'' is obtained from the '*makeChart()*' method which is used to create the chart. Slice intraction is handled on the chart's main object. Here is an example:
 
-{% hilight javascript linenos %}
+{% highlight javascript linenos %}
 "clickSlice": function(dataItem, event) {
     if (dataItem.pulled) {
         chart.pullSlice(dataItem, 0);
@@ -65,7 +65,7 @@ In the above code, '*pullSlice()*' is not a public method. Unfortunately, I coul
 
 Here is the complete sample code I used:
 
-{% hilight javascript linenos %}
+{% highlight javascript linenos %}
 var chart = AmCharts.makeChart("chartdiv", {
     "type": "pie",
     "theme": "",

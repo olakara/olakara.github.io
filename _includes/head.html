@@ -14,7 +14,22 @@
   {% endif %}
 	<meta name="author" content="{{site.author}}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  {% include seo.html %}
+  <link rel="canonical" href="{{url}}/{{page.url}}" itemprop="url">
+  {% if page.path contains '_posts' %}
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@olakara" />
+  <meta name="twitter:title" content="{{page.title}}" />
+  <meta name="twitter:description" content="{{page.title}}" />
+  <!-- Open Graph data -->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="{{page.title}}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{url}}/{{page.url}}" />
+  <meta property="og:description" content="{{page.title}}" />
+  <meta property="og:site_name" content="{{site.title}}" />
+  {% endif %}
+
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{site.url}}/assets/css/all.css">

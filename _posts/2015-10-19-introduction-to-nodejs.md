@@ -30,7 +30,7 @@ In Rayn’s own words:
 
 "Turns out, a lot of the frameworks were designed in a way that they made the assumption a request — response is something that happens instantaneously and that your entire web development experience should be abstracted as a function. You get a request, you return a response. That is the extent of your context."
 
-This led to the using non-blocking sockets and pairing it with JavaScript to create Node.js. The project was demonstrated at the inaugural European JSConf on November 8, 2009. Rayn presented Node.js
+This led to the using non-blocking sockets and pairing it with JavaScript to create Node.js. The project was demonstrated at the inaugural European JSConf on November 8, 2009.
 
 ### Architecture of Node.js
 

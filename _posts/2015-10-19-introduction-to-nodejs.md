@@ -10,15 +10,15 @@ The popularity of JavaScript have skyrocketed in recent years and inevitably the
 
 The Node.js website defines it as:
 
-"Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient."
+> "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient."
 
 Wikipedia defines it as:
 
-"Node.js is an open-source, cross-platform runtime environment for developing server-side web applications."
+> "Node.js is an open-source, cross-platform runtime environment for developing server-side web applications."
 
 I would define it as:
 
-"Node.js is an open source, event-driven, cross-platform runtime environment for building server side and networking applications using JavaScript"
+> "Node.js is an open source, event-driven, cross-platform runtime environment for building server side and networking applications using JavaScript"
 
 Node.js provides an event-driven, non-blocking I/O API for developers to take advantage of. All applications are written in JavaScript and the cross-platform runtime executes it.
 
@@ -28,7 +28,7 @@ Node.js is the brainchild of Ryan Dahl. He was inspired by a flikr file upload d
 
 In Rayn’s own words:
 
-"Turns out, a lot of the frameworks were designed in a way that they made the assumption a request — response is something that happens instantaneously and that your entire web development experience should be abstracted as a function. You get a request, you return a response. That is the extent of your context."
+> "Turns out, a lot of the frameworks were designed in a way that they made the assumption a request — response is something that happens instantaneously and that your entire web development experience should be abstracted as a function. You get a request, you return a response. That is the extent of your context."
 
 This led to the using non-blocking sockets and pairing it with JavaScript to create Node.js. The project was demonstrated at the inaugural European JSConf on November 8, 2009.
 

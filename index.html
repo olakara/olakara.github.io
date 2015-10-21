@@ -5,16 +5,16 @@ description: Tangled web dairy of Abdel Raoof
 ---
 
 <div class="container">
-	<div class="hidden-xs" style="margin-top:80px"></div>
+
 	<header class="row">
 	  <div class="col-sm-6 col-md-12" style="margin-top:25px;margin-bottom:25px">
-	    <h1>{{site.title}}</h1>
+	    <h1 id="pin">{{site.title}}</h1>
 	  </div>
 	</header>
 	<nav>
-		<div class="row" style="margin-top:25px">
+		<div class="row">
  			<div class="col-md-4 col-sm-6 col-xs-12">
-				<a href="about/">
+				<a href="about/" title="About Me">
 					<div class="tile purple profile">
 						<h2 class="title">About Me</h2>
 						<p>Hello World, I am {{site.author}}.</p>
@@ -22,60 +22,100 @@ description: Tangled web dairy of Abdel Raoof
 				</a>
 		    </div>
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="resume/">
-					<div class="tile red">
-						<strong> Resume </strong>
-						<div class="icon icon-resume">&nbsp;</div>
-					</div>
+				<a href="resume/" title="Resume" class="tile red">
+					<i class="icon-rems" style="font-size:8em"></i>
 				</a>
 			</div>
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="blog/">
-					<div class="tile orange">
-						<strong>Blog</strong>
-						<div class="icon icon-blog">&nbsp;</div>
-					</div>
+				<a href="blog/" title="Blog"  class="tile orange">
+					<i class="icon-blog" style="font-size:8em"></i>
 				</a>
 			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for post in site.posts limit:1 %}
+				<a href="{{post.url}}" title="Latest Article">
+					<div class="tile red">
+						<h3 class="title">Latest Article</h3>
+						<h4 class="title">{{ post.title }}</h4>
+						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+					
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-2 col-sm-3 col-xs-6">				
+
+				<a href="{{site.github}}" title="Github" class="tile darken">
+					<i class="icon-gthb" style="font-size:8em"></i>
+				</a>
+
+			</div>
+			
+			
+
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="{{site.stackoverflow}}" title="StackOverflow" class="tile darken" >
+					<i class="icon-skow" style="font-size:8em;color:white"></i>
+				</a>
+			</div>
+
+
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for post in site.posts %}
+					{% if post.featured == true %}
+					<a href="{{post.url}}" title="Featured Article">
+						<div class="tile orange">
+							<h3 class="title">Featured Article</h3>
+							<h4 class="title">{{ post.title }}</h4>
+							<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
+						</div>
+					</a>
+					{% break %}
+					{% endif %}
+				{% endfor %}
+			</div>
+
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="feed.xml" title="RSS Feed" class="tile orange">
+					<i class="icon-rss" style="font-size:8em"></i>
+				</a>
+			</div>	
 		</div>
 
 		<div class="row" style="margin-bottom:25px">
+
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.linkedin}}">
-					<div class="tile blue">
-						<div class="icon icon-linkedin">&nbsp;</div>
-					</div>
+				<a href="{{site.twitter}}" title="Twitter" class="tile blue">
+					<i class="icon-twtr" style="font-size:8em"></i>
 				</a>
-			</div>
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.twitter}}">
-			  		<div class="tile blue">
-						<div class="icon icon-twitter">&nbsp;</div>
-			  		</div>
-			  	</a>
 			</div>
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.facebook}}">
-					<div class="tile blue">
-						<div class="icon icon-facebook">&nbsp;</div>
-			  		</div>
-			  	</a>
-			</div>
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.gplus}}">
-					<div class="tile red">
-						<div class="icon icon-googleplus">&nbsp;</div>
-			  		</div>
-			  	</a>
-			</div>
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="/feed.xml">
-					<div class="tile orange ">
-						<div class="icon icon-RSS">&nbsp;</div>
-  				</div>
+				<a href="{{site.gplus}}" title="Google Plus"  class="tile orange">
+					<i class="icon-gpls" style="font-size:8em"></i>
 				</a>
 			</div>
+
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="{{site.facebook}}" title="Facebook" class="tile drk-blue">
+					<i class="icon-fcbk" style="font-size:8em"></i>
+				</a>
+			</div>
+
+			
+
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="{{site.linkedin}}" title="LinkedIn" class="tile blue">
+					<i class="icon-lkin" style="font-size:8em"></i>
+				</a>
+			</div>
+
 		</div>
 	</nav>
-</div> <!-- container -->
+</div>

@@ -4,31 +4,20 @@ title: Tags
 description: A page with tag cloud and display of articles tag wice
 theme: red
 ---
-    <div class="row">
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-8">
+    <div class="row">       
+        <div class="col-md-12">
             <section class="tags">
                 <ul class="nav nav-pills">
                     {% for tag in site.tags %}
-
-                    {% capture xtag %}
-                      {{ tag | first }}
-                    {% endcapture %}
                     <li class="red" style="margin:5px">
-                        {% if xtag contains 'C#' %}
-                          <a href="/tags/CSharp/">{{ tag | first }}&nbsp;<span class="badge">{{ tag | last | size}}</span></a>
-                        {% else %}
-                          <a href="/tags/{{ tag | first }}/">{{ tag | first }}&nbsp;<span class="badge">{{ tag | last | size}}</span></a>
-                        {% endif %}
+                        <a href="/tags/{{ tag | first | slugize }}/"> {{ tag | first }}&nbsp;<span class="badge">{{ tag | last | size}}</span></a>
                     </li>
                     {% endfor %}
                 </ul>
             </section>
-
+        
         </div>
-        <div class="col-md-2">
-        </div>
+       
     </div>
     <hr/>
     <div class="row">
@@ -39,9 +28,9 @@ theme: red
                     {{ tag[0] }}
                 {% endfor %}
             {% endcapture %}
-
+            
             {% assign sortedtags = tags | split:' ' | sort %}
-
+            
             {% for tag in sortedtags %}
                 <h3>{{tag}}</h3>
                 <ul>
@@ -51,7 +40,7 @@ theme: red
                                 <li class="alink"><a href="{{ post.url }}" class="red-link">{{ post.title }}</a></li>
                             {% endif %}
                         {% endfor %}
-                    {% endfor %}
+                    {% endfor %}    
                 </ul>
             {% endfor %}
             </section>

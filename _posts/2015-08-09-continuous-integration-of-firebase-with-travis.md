@@ -4,6 +4,7 @@ title:  Continuous integration of Firebase with Travis CI
 date:   2015-08-09
 categories: Firebase Travis
 tags: Firebase Travis
+featured: true
 ---
 
 I recently started working on a project and decided to go with Firebase for backend service and hosting it. Along with this new setup, I wanted to have a continuous integration setup so that the whole development cycle is automated and deployments are quick. Since my code repository was on Github, I decided to go [Travis-CI](http://www.travis-ci.org/).

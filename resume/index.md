@@ -4,12 +4,12 @@ title: Resume
 description: Resume of Abdel Raoof
 theme: red
 ---
-Six plus years of experience in software development on Microsoft and Java technologies. Experienced in design and development of enterprise web applications, content management systems and enterprise application integration.
+Six years of experience in software development on Microsoft and Java technologies. Experienced in design and development of enterprise web applications, content management systems and enterprise application integration.
 
-*Experience in Web Technology:*
+**Experience in Web Technology:**
 Building and Supporting web applications using Microsoft Technologies (ASP.Net & ASP.Net MVC). Developing UI using Ext JS and jQuery.
 
-*Experience in Enterprise Content Management:*
+**Experience in Enterprise Content Management:**
 Implemented custom applications for content and knowledge management. Have also worked with leading industry ECM applications like SharePoint 2013, MOSS 2007, SharePoint 2010 and Documentum.
 
 <!-- Skills -->
@@ -19,19 +19,22 @@ Implemented custom applications for content and knowledge management. Have also 
 	</header>
 	<div class="col-md-9">
 		<div class="row">
-			<ul class="col-md-6">
-				<li style="list-style:none"><h4>Programming</h4></li>
-				<li><strong>C#</strong></li>
-				<li><strong>ASP.Net / ASP.Net MVC</strong></li>
-				<li><strong>Javascript</strong></li>
-				<li><strong>HTML & CSS</strong></li>
-			</ul>
-			<ul class="col-md-6">
-				<li style="list-style:none"><h4>Specialties</h4></li>
-				<li><strong>.Net Web Technologies</strong></li>
-				<li><strong>SharePoint 2013</strong></li>
-				<li><strong>Sencha Ext Js</strong></li>
-			</ul>
+			<div class="col-md-6">
+				<ul class="list-group">
+					<li class="list-group-item active"><h4><strong>Programming</strong></h4></li>
+					<li class="list-group-item">C#</li>
+					<li class="list-group-item">ASP.Net / ASP.Net MVC</li>
+					<li class="list-group-item">Javascript</li>
+					<li class="list-group-item">HTML & CSS</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<ul class="list-group">
+					<li class="list-group-item active"><h4><strong>Specialties</strong></h4></li>
+					<li class="list-group-item">.Net Web Technologies</li>
+					<li class="list-group-item">JavaScript & AngularJS</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>

@@ -4,8 +4,9 @@ title: Hi, I am Abdel Raoof Olakara
 description: About Me page of Abdel Raoof
 theme: purple
 ---
-I am a web "focused" developer mostly working using Microsoft .Net technologies and Javascript. Occasionally, I end up working on non web related projects. I am based in Abu Dhabi, United Arab Emirates and work for C4 Advanced Solution as Application Developer.
-This is my personal website and blog where I put down my thoughts, solutions to problems and technical experiences.
+
+I am a web focused developer mostly working using Microsoft .Net technologies. Occasionally, I end up working on non web related projects. I am based in Abu Dhabi, United Arab Emirates and work for C4 Advanced Solution as Application Developer.
+This is my personal website and blog where I put down my thoughts, solutions to problems and learning notes.
 
 ## Stack Overflow
 
@@ -20,7 +21,7 @@ Stackoverflow is a online community I hang around a lot during my free time. You
 
 This is a static site powered by Jekyll. The design was done by me and the theme is freely available on [Github](https://github.com/olakara/JekyllMetro). I have used Bootstrap, jQuery, icons from Metro Studio of Syncfusion and Github for hosting the site.
 
-Technicals apart, this is my personal site where I plan to pen down my thoughts, technical experiences that I would like to share. But, the content and opinion that you see here are personal and not related to companies / clients i work with. And regarding the code you see there.. you may use it as per your discretion.
+Technicals apart, this is my personal site where I plan to pen down my thoughts, technical experiences that I would like to share. But, the content and opnion that you see here are personal and not related to companies / clients i work with. And regarding the code you see there.. you may use it as per your discretion.
 
 ## About this Theme
 

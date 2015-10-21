@@ -28,15 +28,29 @@ navigation:
 - text: Search
   url: /search/
 
+
 # Author Details
 author:         'Abdel Raoof Olakara'
-linkedin:       'https://ae.linkedin.com/in/olakara/'
-twitter:        'https://twitter.com/olakara'
+
+#Social Media links (Use complete URL except for email)
+dribbble:
+email:
 facebook:       'https://www.facebook.com/olakara'
+flickr:
+github:         'https://github.com/olakara'
 gplus:          'https://plus.google.com/100425464897246255887/'
+instagram:
+pinterest:
+linkedin:       'https://ae.linkedin.com/in/olakara/'
+rss:
+stackoverflow:  'http://stackoverflow.com/users/185655/abdel-raoof'
+twitter:        'https://twitter.com/olakara'
 
 # Google Analytics
 gahandler: 'UA-53220404-1'
+
+#if footersvg is 'true' the social media links will be shown top on the copy right in the footer
+footersvg: 'true'
 
 # Disqus
 disqushandler: 'abdelraoof'
@@ -47,4 +61,4 @@ paginate_path: '/blog/page:num'
 destination: ./_site
 
 # Custom vars
-version:          0.7.10
+version:          0.9x beta 2 (custom)

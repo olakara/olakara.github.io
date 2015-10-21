@@ -1,28 +1,24 @@
 (function($) {
     $.fn.jekyllSearch = function(options) {
         var settings = $.extend({
-	          jsonData            : [],
             jsonFile            : '/search.json',
-            template            : '<a href="{url}" title="{title}">{title}</a>',
+            template            : '<a href="{url}" title="{desc}">{title}</a>',
             searchResults       : '.results',
             searchResultsTitle  : '<h4>Search results</h4>',
             limit               : '10',
             noResults           : '<p>Oh shucks<br/><small>Nothing found :(</small></p>'
         }, options);
 
-        var jsonData = $(settings.jsonData),
+        var jsonData = [],
             origThis = this,
             searchResults = $(settings.searchResults);
             searchResultsHeader = searchResults.find('.results-title');
             searchResultsList = searchResults.find('.results-list');
-	          searchMessage = $('.search-message');
+	    searchMessage = $('.search-message');
 
         var matches = [];
 
-
-        if(jsonData.length) {
-              registerEvent();
-        } else if(settings.jsonFile && searchResults.length){           
+        if(settings.jsonFile.length && searchResults.length){
             $.ajax({
                 type: "GET",
                 url: settings.jsonFile,

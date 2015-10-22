@@ -87,6 +87,22 @@ If you plan to dive deep into this library, refer to this [online book](http://n
 
 **Zlib:** Is a general purpose data compression library written in C.
 
+### Pros & Cons of Node.js
+
+First let’s discuss few pros of using Node.js:
+
+-	A major benefit of Node.js is Asynchronous I/O which is a good match to common web and network driven applications. Node.js is able to scale to large volume of clients because I/O tasks are handled asynchronously.
+-	Node.js is built on JavaScript and you will use the same language on the backend and frontend. There is no technology switching involved and you may share same code / library with both server and client.
+-	It’s easy to start with! Unlike other stacks be it .Net, LAMP or what-ever as a developer you don’t have to go through knowing a separate server product (IIS, Apache etc) and how to deploy to them and other nitty-gritty things involved. Node.js comes with the server the necessary tools that makes development and deployment swift and easy.
+-	Active and vibrant community that shares lots of code on public repositories like github. The npm community is very rich and growing at a fast pace. This provides lots of ready to use modules.
+
+Now, moving on to the cons:
+
+-	Number one disadvantage would be using Node.js for CPU-intensive tasks like generated report, analytics etc.
+-	Using the event driven methodology without proper knowledge might lead to  bad code in the applications ( callback hell etc)
+-	Node.js is a “teenager”! Even though most of the core libraries have reached stability, you will still find few still in experimental state. Surely this disadvantage will move away as Node.js matures.
+
+
 So, what type of applications are suitable to be built with Node.js? Applications like the involve / require fast file uploads, real-time data, web socket servers, data streaming etc.. In short, Node is a great option for applications that wait on I/O and have to handle a lot of concurrent connections.
 
 Next in the Node.js series, we will try to understand node.js more deeper by looking at the event loop.

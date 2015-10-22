@@ -57,6 +57,7 @@ Below this, we have native libraries built in C / C++:
 **libuv:** It is a multi-platform support library with a focus on asynchronous I/O. Initialy, Node.js started using libuv as an abstraction layer for libev and libio, but recently libuv have become more powerful and have replaced underlying libraries to become multi-platform. When V8 handle the execution of Javascript, libuv handles the event loop and async I/O operations. Together they form the power house of Node.js.
 
 Here are featuers of libuv:
+
 - Full-featured event loop backed by epoll, kqueue, IOCP, event ports.
 - Asynchronous TCP and UDP sockets
 - Asynchronous DNS resolution
@@ -88,4 +89,4 @@ If you plan to dive deep into this library, refer to this [online book](http://n
 
 So, what type of applications are suitable to be built with Node.js? Applications like the involve / require fast file uploads, real-time data, web socket servers, data streaming etc.. In short, Node is a great option for applications that wait on I/O and have to handle a lot of concurrent connections.
 
-Next in the Node.js series, we will discuss about setting up node.js and development environment.
+Next in the Node.js series, we will try to understand node.js more deeper by looking at the event loop.

@@ -19,7 +19,7 @@ What makes node.js so popular and set it apart from other web programming paradi
 Current servers like Apache is multi threaded program, i.e.; it spawns a thread per request. When the program execution is stopped (by pending I/O) the thread / process will be put to sleep by the system but it will still consume resources. This is not a concern for single user (or low number of users) systems. But if you have a multi user system with a large number of users you are bound to hit the bottleneck! Each request will have a process or thread to handle them and these might be waiting for an I/O operation to be complete. So, till the task is complete the processes consume CPU and memory making it expensive. Node.js takes a different approach to solve this problem. It serves all the requests from a single thread. The program code running in this thread is still executed synchronously but every time a system call takes place it will be delegated to the event loop along with a callback function. The main thread is not put to sleep and keeps serving other requests. As soon as the previous system call is completed, the event loop will execute the callback passed. This callback will usually deal with the result returned and continue the program flow. Thus, the main program is not blocked by the I/O operations i.e. Non-Blocking I/O and asynchronous programming!
 
 <blockquote>
-Remember: Node.js keeps a single thread for your code. Everything else runs in parallel!
+  Remember: Node.js keeps a single thread for your code. Everything else runs in parallel!
 </blockquote>
 
 ### The Event Loop

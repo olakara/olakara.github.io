@@ -105,4 +105,4 @@ Now, moving on to the cons:
 
 So, what type of applications are suitable to be built with Node.js? Applications like the involve / require fast file uploads, real-time data, web socket servers, data streaming etc.. In short, Node is a great option for applications that wait on I/O and have to handle a lot of concurrent connections.
 
-Next in the Node.js series, we will try to understand node.js more deeper by looking at the event loop.
+Next in the Node.js series, we will try to [understand node.js event loop](http://abdelraoof.com/blog/2015/10/28/understanding-nodejs-event-loop).

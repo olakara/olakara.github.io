@@ -81,7 +81,8 @@ undefined
 </div>
 </div>
 
-You will notice that when node execute the console.log statement along with the string it displays “undefined”. This is actually the return value of the method executed. You can make use of underscore to get the result of last run command.  
+
+You will notice that when node executes the console.log statement along with the string it displays "undefined". This is actually the return value of the method executed. You can make use of underscore to get the result of last run command.  
 Here is the list of commands and shortcuts you can use while working on REPL:
 
 <table class="table table-bordered table-striped table-hover">

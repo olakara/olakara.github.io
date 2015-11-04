@@ -135,10 +135,10 @@ Before we move further into programming, we shall look into some important conce
 
 If you have worked with JavaScript you should have already come across callbacks. You must be familiar with this sample code:
 
-{% highlight javascript linesnos %}
-  window.setTimeout(function() {
-    alert('A delayed alert box!');
-  }, 2000);
+{% highlight javascript linenos %}
+window.setTimeout(function() {
+  alert('A delayed alert box!');
+}, 2000);
 {% endhighlight %}
 
 The anonymous function is a callback function which is called after a timeout of 2 seconds. When you look at Node.js API's you will notice that most of the functions have callbacks (There are synchronous function calls as well) to make way for asynchronous programming. In fact Node.js uses a callback concept called  "error-first callbacks" wherein the first argument of the callback is always an error object. The following arguments will contain any data that should be returned to the callback. If an error occurs during the operation, the error object is populated otherwise it's set to null.
@@ -146,9 +146,9 @@ The anonymous function is a callback function which is called after a timeout of
 Here is an example of error-first callback:
 
 {% highlight javascript linesnos %}
-  fs.readFile('test.txt', function(error, data) {  
-    console.log(error,data);
-  });
+fs.readFile('test.txt', function(error, data) {  
+  console.log(error,data);
+});
 {% endhighlight %}
 
 In the above piece of code, readFile is used to read contents of a file asynchronously and call the callback after doing so. If things goes well, you will see null followed by the file content. If any error occurs you will the error object populated and data undefined.  
@@ -165,7 +165,7 @@ Modules in Node.js is also responsible for the quick proliferation of freely ava
 
 Node.js has a simple module loading system. You can simple load a module by require-ing it.  Here is an example:
 
-{% highlight javascript linesnos %}
+{% highlight javascript linenos %}
 var http = require('http');
 {% endhighlight %}
 
@@ -177,7 +177,7 @@ For Now, this is just the introduction to Node.js Modules. We will visit it agai
 
 Now let's make use of the newly acquired knowledge to built a simple web server. Here is how a simple 'Hello World' printing web server looks like:
 
-{% highlight javascript linesnos %}
+{% highlight javascript linenos %}
 var http = require('http');
 var server = http.createServer();
 server.listen(8080);
@@ -193,7 +193,7 @@ server.on('request', function( request, response) {
 
 Unfortunately, it doesn't server anything other than the message "Hello World". Let's use some of the Node.js core modules to built a webserver that really does serve files. Here is the final code:
 
-{% highlight javascript linesnos %}
+{% highlight javascript linenos %}
 var http = require('http');
 var path = require('path');
 var url = require('url');

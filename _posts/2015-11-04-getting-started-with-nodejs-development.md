@@ -34,13 +34,19 @@ REPL (Read-Eval-Print-Loop) is an interface where you can interactively run Java
 
 Now you will enter the REPL interface where you can type any Node.js command. The interface will take any JavaScript expression, evaluate it and provide its result. Let’s start with simple math expression:
 
-
+<div class="row">
+<div class="col-md-6">
 {% highlight bash linenos %}
  > 2+2
  4
  > 1+5
  6
 {% endhighlight %}
+</div>
+<div class="col-md-6">
+  <img class="img-responsive image-center thumbnail" src="{{site.url}}/img/nodejs/node-repl-math.png" alt="Node.js REPL " />
+</div>
+</div>
 
 You could also make use of variable to store values like:
 

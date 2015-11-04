@@ -44,21 +44,30 @@ Now you will enter the REPL interface where you can type any Node.js command. Th
 {% endhighlight %}
 </div>
 <div class="col-md-6">
-  <img class="img-responsive image-center thumbnail" src="{{site.url}}/img/nodejs/node-repl-math.png" alt="Node.js REPL " />
+  <img class="img-responsive image-center thumbnail" src="{{site.url}}/img/nodejs/node-repl-math.png" alt="Node.js REPL example" />
 </div>
 </div>
 
 You could also make use of variable to store values like:
 
+<div class="row">
+<div class="col-md-6">
 {% highlight bash linenos %}
 > x = 5
 5
 > x+2
 7
 {% endhighlight %}
+</div>
+<div class="col-md-6">
+  <img class="img-responsive image-center thumbnail" src="{{site.url}}/img/nodejs/node-repl-math2.png" alt="Node.js REPL Math example " />
+</div>
+</div>
 
 You could also use other JavaScript object and their methods for example:
 
+<div class="row">
+<div class="col-md-6">
 {% highlight bash linenos %}
 > Math.random()
 0.7993805794976652
@@ -66,6 +75,11 @@ You could also use other JavaScript object and their methods for example:
 Hello World
 undefined
 {% endhighlight %}
+</div>
+<div class="col-md-6">
+  <img class="img-responsive image-center thumbnail" src="{{site.url}}/img/nodejs/node-repl2.png" alt="Node.js REPL Terminal example 2 " />
+</div>
+</div>
 
 You will notice that when node execute the console.log statement along with the string it displays “undefined”. This is actually the return value of the method executed. You can make use of underscore to get the result of last run command.  
 Here is the list of commands and shortcuts you can use while working on REPL:

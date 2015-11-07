@@ -25,8 +25,8 @@ navigation:
   url: /tags/
 - text: Archive
   url : /archive/
-- text: Search
-  url: /search/
+#- text: Search
+#  url: /search/
 
 
 # Author Details

@@ -246,7 +246,7 @@ server.on('request', function( request, response) {
 });
 {% endhighlight %}
 
-Surely, you could improve this but be much more robust and provide better functionalities available in other web server.
+Surely, you could improve this to be much more robust and provide functionalities available in other web servers.
 
 ### Wrapping up!
 

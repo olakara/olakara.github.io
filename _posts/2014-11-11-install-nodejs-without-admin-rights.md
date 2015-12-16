@@ -12,7 +12,7 @@ Node.js does provide pre-built installers for all platforms but here we are goin
 First you will need to download the Windows Binary. You can get it from [Node.js download page](http://nodejs.org/download/) or [http://nodejs.org/dist/latest/](http://nodejs.org/dist/latest/). For x64, you will have to download from the appropriate folder. Move the executable to a local folder.
 
 ###Step 2: Get NPM
-NPM (Node Package Manager) is the package manager for Node.js and you will need this for your development. You can download NPM from [ http://nodejs.org/dist/npm/]( http://nodejs.org/dist/npm/) and extract the zip file to a local folder.
+NPM (Node Package Manager) is the package manager for Node.js and you will need this for your development. You can download NPM from [ https://github.com/npm/npm/releases](https://github.com/npm/npm/releases) and extract the zip file to a local folder.
 
 ###Step 3: Configure the environment PATH variable.
 You need to set up the PATH variable so that you can call node from anywhere in the system.

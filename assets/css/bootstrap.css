@@ -6,18 +6,8 @@
  * Based on Bootstrap
 */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
-@font-face{ 
-	font-family: 'Dubai';
-    font-style: normal;
-    font-weight: 400;
-	src: url('http://abdelraoof.com/assets/fonts/DubaiW23-Regular.eot');
-	src: url('http://abdelraoof.com/assets/fonts/DubaiW23-Regular.eot?#iefix') format('embedded-opentype'),
-	     url('http://abdelraoof.com/assets/fonts/DubaiW23-Regular.woff') format('woff'),
-	     url('http://abdelraoof.com/assets/fonts/DubaiW23-Regular.ttf') format('truetype'),
-	     url('http://abdelraoof.com/assets/fonts/DubaiW23-Regular.svg#webfont') format('svg');
-}
 html {
-  font-family: 'Dubai';
+  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -277,7 +267,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Dubai","Open Sans", Calibri, Candara, Arial, sans-serif;
+  font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.42857143;
   color: #333333;

@@ -1,13 +1,4 @@
-@font-face{ 
-	font-family: 'Dubai';
-    font-style: normal;
-    font-weight: 400;
-	src: url('http://abdelraoof.com/assets/fonts/DubaiW23-regular.eot');
-	src: url('http://abdelraoof.com/assets/fonts/DubaiW23-regular.eot?#iefix') format('embedded-opentype'),
-	     url('http://abdelraoof.com/assets/fonts/DubaiW23-regular.woff') format('woff'),
-	     url('http://abdelraoof.com/assets/fonts/DubaiW23-regular.ttf') format('truetype'),
-	     url('http://abdelraoof.com/assets/fonts/DubaiW23-regular.svg#webfont') format('svg');
-}
+
 
 html {
   font-family: 'Dubai'; 

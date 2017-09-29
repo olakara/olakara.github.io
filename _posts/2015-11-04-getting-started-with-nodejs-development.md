@@ -10,7 +10,7 @@ In previous articles, we discussed about the internals of Node.js. In this artic
 
 ### Installing Node.js
 
-Let’s get started by setting up one development environment. If you haven’t installed Node.js already, you should head to nodejs.org and download the pre-built installers available for your platform. Installation is simple but if you need help follow the [installation instructions on How to Node]( http://howtonode.org/how-to-install-nodejs). If you don’t have administrator rights on your PC to install from installers, check out [my instructions]( http://abdelraoof.com/blog/2014/11/11/install-nodejs-without-admin-rights/) to install without administrator privileges and configure Node.js to work in corporate environments.
+Let’s get started by setting up one development environment. If you haven’t installed Node.js already, you should head to nodejs.org and download the pre-built installers available for your platform. Installation is simple but if you need help follow the [installation instructions on How to Node](https://www.guru99.com/download-install-node-js.html). If you don’t have administrator rights on your PC to install from installers, check out [my instructions]( http://abdelraoof.com/blog/2014/11/11/install-nodejs-without-admin-rights/) to install without administrator privileges and configure Node.js to work in corporate environments.
 
 Now that Node we have node installed let's confirm it’s properly installed and we can run it. Open a command line and run the following command:
 

@@ -2,8 +2,8 @@
 layout: post
 title:  Fixing 'Permission Denied (publickey)' when pushing to Github
 date:   2017-10-24
-categories: Github SSH
-tags: Github SSH
+categories: Github
+tags: Github
 ---
 
 Honestly, I am not a regular Githuber! Every now and then I have spike of activity and then I disappear (This is not my indent when I start a repo). I frequently face the 'Permission Denied (publickey)' when I start pushing some code into my new repos. 
@@ -28,7 +28,7 @@ ssh-keygen.exe -t rsa -C your-email-for-github@domain.com
 
 And here is how the output looks like:
 
-<img class="img-responsive image-center thumbnail" src="{{site.url}}/img/github/ssh-keygen.png" alt="create a SSH key pair using ssh-keygen command" />
+<img class="img-responsive image-center thumbnail" src="{{site.url}}/img/github/ssh-keygen.png" alt="Create a SSH key pair using ssh-keygen command" />
 
 This will create both *id_rsa* and *id_rsa.pub* files. 
 
@@ -36,4 +36,17 @@ This will create both *id_rsa* and *id_rsa.pub* files.
 
 Get your public key by opening id_rsa.pub in any text editor. Copy its contents and paste it into Github Settings > SSH and GPG Keys.
 
-Now you have a SSH key configured on Github. This should solve your Permission Denied error and enable you to push code into your repo! Happy coding :) 
+Now you have a SSH key configured on Github. This should solve your Permission Denied error and enable you to push code into your repo! 
+
+**Bonus!**
+Here is how you can test your SSH key before you execute the push command. Issue the following command:
+
+{% highlight bash %}
+ssh -T git@github.com
+{% endhighlight %}
+
+And here is how the output looks like if everything is fine:
+
+<img class="img-responsive image-center thumbnail" src="{{site.url}}/img/github/ssh-test.png" alt="Testing new SSH configuration" />
+
+Happy coding :) 

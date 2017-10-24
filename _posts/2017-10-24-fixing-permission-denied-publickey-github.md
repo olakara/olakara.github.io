@@ -39,6 +39,7 @@ Get your public key by opening id_rsa.pub in any text editor. Copy its contents 
 Now you have a SSH key configured on Github. This should solve your Permission Denied error and enable you to push code into your repo! 
 
 **Bonus!**
+
 Here is how you can test your SSH key before you execute the push command. Issue the following command:
 
 {% highlight bash %}

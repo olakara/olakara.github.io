@@ -6,11 +6,11 @@ categories: Github
 tags: Github
 ---
 
-Honestly, I am not a regular Githuber! Every now and then I have spike of activity and then I disappear (This is not my indent when I start a repo). I frequently face the 'Permission Denied (publickey)' when I start pushing some code into my new repos. 
+Honestly, I am not a regular Githuber! But every now and then I have spike of activity and then I disappear (This is not my indent when I start a repo). I frequently face the 'Permission Denied (publickey)' when I start pushing some code into my new repos. 
 
 <img class="img-responsive image-center thumbnail" src="{{site.url}}/img/github/git-permission-denied-error.png" alt="Git permission denied error when pushing" />
 
-This means that, you do not have a SSH key on your local machine associated with your account. Either the key was removed or you haven't made any. So, the solution is to create a new SSH key and associate it so that your machine is authorized to push. Here's how to fix it: 
+This means that, you do not have a SSH key on your local machine associated with your account. Either the key was removed or you haven't made any. So, the solution is to create a new SSH key and associate it so that your machine is authorized to push code into the repo. Here's how to fix it: 
 
 **Step 1: Check if you have a SSH key**
 

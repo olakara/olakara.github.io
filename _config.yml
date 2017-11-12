@@ -4,7 +4,7 @@ markdown_ext:  markdown,mkdown,mkdn,mkd,md
 highlighter: rouge
 
 # Permalinks
-permalink:        /blog/:year/:month/:day/:title
+permalink:        /blog/:year/:month/:day/:title/
 
 # Setup
 title:            'Abdel Raoof'
@@ -25,9 +25,6 @@ navigation:
   url: /tags/
 - text: Archive
   url : /archive/
-#- text: Search
-#  url: /search/
-
 
 # Author Details
 author:         'Abdel Raoof Olakara'
@@ -61,4 +58,4 @@ paginate_path: '/blog/page:num'
 destination: ./_site
 
 # Custom vars
-version:          0.9x beta 2 (custom)
+version:          0.12 (custom)

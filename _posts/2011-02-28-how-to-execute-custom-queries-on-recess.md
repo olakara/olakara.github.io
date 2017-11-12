@@ -27,7 +27,7 @@ foreach ($rows as $row)
 }
 {% endhighlight %}
 
-####Other methods of Database class
+**Other methods of Database class**
 
 The Database class also provides access to named data sources through static methods. You can use the **addSource** and **getSource** methods to add and get a named source.
 

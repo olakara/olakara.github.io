@@ -14,7 +14,7 @@ ASP.Net’s JSON serialize encodes DateTime instance as a string. If you return 
 
 This is basically nothing but Jan 16 2011 10:33:29! Ext JS components like data grid, datepicker do not consume this format and needs to be transformed.
 
-####Why does Microsoft serialize DateTime in this form?
+**Why does Microsoft serialize DateTime in this form?**
 
 One of the major disadvantages of using JSON is its lack of date/time literal. The support for date and time values is provided by the Date object in javascript. So, In order to represent the date and time, there are two options available:
 1. To express the data as string
@@ -26,7 +26,7 @@ The numeric form would be the the number of milliseconds in Universal Coordinate
 \/Date(ticks)\/
 {% endhighlight %}
 
-####How to fix it in Ext JS?
+**How to fix it in Ext JS?**
 
 Deserializing in Ext JS can be done with the help of Date class. You can use the parseDate static method to convert the serialized date into Date object.
 

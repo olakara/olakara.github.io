@@ -30,7 +30,7 @@ I would define it as:
 
 Node.js provides an event-driven, non-blocking I/O API for developers to take advantage of. All applications are written in JavaScript and the cross-platform runtime executes it.
 
-### How did Node.js come into being?
+**How did Node.js come into being?**
 
 Node.js is the brainchild of Ryan Dahl. He was inspired by a flikr file upload demo which displayed the progress of the file being uploaded. Doing this on a larger scale was difficult during those days because someone uploading a particular file that could be going on for several minutes at the same time and you have this extra request coming in that needs a response concurrently.
 
@@ -42,7 +42,7 @@ In Rayn’s own words:
 
 This led to the using non-blocking sockets and pairing it with JavaScript to create Node.js. The project was demonstrated at the inaugural European JSConf on November 8, 2009.
 
-### Architecture of Node.js
+**Architecture of Node.js**
 
 Shown below is my take on the full stack architecture of node.js and looking at the current version 4.2.1.
 
@@ -87,7 +87,7 @@ If you plan to dive deep into this library, refer to this [online book](http://n
 
 **Zlib:** Is a general purpose data compression library written in C.
 
-### Pros & Cons of Node.js
+**Pros & Cons of Node.js**
 
 First let’s discuss few pros of using Node.js:
 

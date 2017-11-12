@@ -9,7 +9,7 @@ tags: Github
 I thought setup up my DNS entries to point my new domain (abdelraoof.com) to my Github would be as simple.  After making sure my Github pages was running at olakara.github.com, I had quite a drama with Namecheap DNS!!
 And didn't go as I planned. To start with Namecheap support was not as I expected it to be. But keeping these aside, here is how you can configure the Namesheap DNS for Github pages if you are trying to do so.
 
-###Prerequisite
+**Prerequisite**
 
 Before you start with Namecheap, you have to make sure you have completed the Github procedures for setting up a custom domain. Github explains it on their [Github Help](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages).
 You need to make sure you have a file named CNAME with your domain name in it. If you are very new to this, you might want to have a look at [this guide](https://help.github.com/articles/adding-a-cname-file-to-your-repository). Here is how my CNAME file looks like:
@@ -18,7 +18,7 @@ You need to make sure you have a file named CNAME with your domain name in it. I
 
 You might also want to read [this](https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider) to get a better understanding of what we are going to do next.
 
-###Configuring Namesheap
+**Configuring Namesheap**
 
 Once you have the CNAME file in place you need to login into your Namecheap account and select the appropriate domain name from the list of domains you own.
 

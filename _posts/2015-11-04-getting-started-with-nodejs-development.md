@@ -8,7 +8,7 @@ tags: NodeJS
 
 In previous articles, we discussed about the internals of Node.js. In this article, we are going to discuss how to install Node.js and start programming. We will try our hands on running JavaScript interactively, then build small applications using Node.js. Along the way I will introduce you to few important concepts of Node.js programming. But first let's setup the environment.
 
-### Installing Node.js
+**Installing Node.js**
 
 Let’s get started by setting up one development environment. If you haven’t installed Node.js already, you should head to nodejs.org and download the pre-built installers available for your platform. Installation is simple but if you need help follow the [installation instructions on How to Node](https://www.guru99.com/download-install-node-js.html). If you don’t have administrator rights on your PC to install from installers, check out [my instructions]( http://abdelraoof.com/blog/2014/11/11/install-nodejs-without-admin-rights/) to install without administrator privileges and configure Node.js to work in corporate environments.
 
@@ -24,7 +24,7 @@ It should display the version number you installed. Something like this:
 
 Remember, node.js is not just a server or application; It’s a runtime. Node.js provides an interactive interface for developer to try out JavaScript. Let’s have a deeper look at this.
 
-### REPL Terminal
+**REPL Terminal**
 
 REPL (Read-Eval-Print-Loop) is an interface where you can interactively run JavaScript and see the results. It can be used for simply trying out some JavaScript code and getting its results instantly. You can access REPL by simply running node without any arguments. To invoke REPL interface, run the node.exe or nor simply node!
 
@@ -132,7 +132,7 @@ Here is the list of commands and shortcuts you can use while working on REPL:
     </tbody>
   </table>
 
-### The "Hello World" application
+**The "Hello World" application**
 
 Even though we did some programming with REPL, let’s make a plain and simple console application that prints the words "Hello World" to the terminal. Simply open a file (hello.js) on any text editing tool and code the following:
 
@@ -148,7 +148,7 @@ You can run this by the following command:
 
 Node.js is a great platform for creating small command line utilities. You will find many such utility applications like gulp, grunt, etc. that help developers. This is because Node.js gives you a powerful programming platform and with the help of tools like npm developers can share their tools with each other.  
 
-### Node.js Programming Concepts
+**Node.js Programming Concepts**
 
 Before we move further into programming, we shall look into some important concepts that a new developer should understand. Node.js programming is slightly tricky due to the asynchronous behavior involved. At first most people find it hard to grasp but nevertheless it’s an interesting concept to programming. We will discuss about **Callbacks** and **Modules**.
 
@@ -194,7 +194,7 @@ By this statement I instruct Node.js that I require the HTTP module and will be 
 
 For Now, this is just the introduction to Node.js Modules. We will visit it again in near future.
 
-### Creating a web server 
+**Creating a web server**
 
 Now let's make use of the newly acquired knowledge to built a simple web server. Here is how a simple 'Hello World' printing web server looks like:
 
@@ -248,6 +248,6 @@ server.on('request', function( request, response) {
 
 Surely, you could improve this to be much more robust and provide functionalities available in other web servers.
 
-### Wrapping up!
+**Wrapping up!**
 
 Node.js have a lot to offer and I hope these articles help you get started. In the next article we will discuss about different Node.js frameworks.

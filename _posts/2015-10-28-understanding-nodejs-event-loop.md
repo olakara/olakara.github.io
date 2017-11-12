@@ -8,11 +8,11 @@ tags: NodeJS
 
 Previously, I introduced [Node.js and its architecture](http://abdelraoof.com/blog/2015/10/19/introduction-to-nodejs/). Now, we will try to understand the event loop. We will start with event based programming, cost of I/O & non-blocking I/O and try to understand the event loop concepts and learn how the node.js event loop works.
 
-### Event driven programming
+**Event driven programming**
 
 Event driven programming is a programming paradigm in which the flow of the program is determined by events such as user actions (mouse clicks, key presses), sensor outputs, or messages from other programs/threads. Today, this concept is largely using in GUI Applications wherein a mechanism is in place that listens for events and executes an action once the event occurs. This is the basic principle behind node.js!
 
-### Cost of I/O & Non -Blocking I/O
+**Cost of I/O & Non -Blocking I/O**
 
 What makes node.js so popular and set it apart from other web programming paradigms? In most software systems every system call, like reading or writing a file, querying a database, is blocking. i.e, the program execution will stop and wait for the call to finish and return its result. After that the program execution resumes. This is blocking I/O and synchronous programming. The more your program waits for the result, the more costly it is and this is cost of I/O... One of the core point of Node.js is to reduce this cost (the cost of waiting for I/O).
 
@@ -22,7 +22,7 @@ Current servers like Apache is multi threaded program, i.e.; it spawns a thread 
   Remember: Node.js keeps a single thread for your code. Everything else runs in parallel!
 </blockquote>
 
-### The Event Loop
+**The Event Loop**
 
 The event loop gives Node the capability to handle highly concurrent requests while still running "single-threaded". In any event-driven application, there is generally a main loop that listens for events, and then triggers a callback function when one of those events is detected. Similarly, the event loop delegates I/O operations via POSIX interface while it still handles new requests and callbacks. Here is my take on how things work inside the node.js server:
 

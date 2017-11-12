@@ -202,6 +202,6 @@ new Ext.Panel({
 });
 {% endhighlight %}
 
-<img class="img-responsive image-center thumbnail" src="{{site.url}}/img/extjs/hideseriescharts.png" alt="Hide series in Ext JS Charts" />
+<img class="img-responsive image-center thumbnail ltbox" src="{{site.url}}/img/extjs/hideseriescharts.png" alt="Hide series in Ext JS Charts" />
 
 Well, that's all for now. In the coming weeks we will have some more tutorials on chart and finally build a dashboard. We will also have a look at the new touch UI framework introduced recently.

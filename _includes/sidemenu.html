@@ -13,7 +13,7 @@
       <div class="col-md-12">
         <ul class="left-nav">
         {% for link in site.navigation %}
-          {% capture pageurl %}{{link.url}}{{"index.html"}}{% endcapture %}
+          {% capture pageurl %}{{link.url}}{% endcapture %}
           {% if page.url == pageurl or (link.text == 'Blog' and page.id) %}
             <li class="left-nav-item left-nav-selected">{{link.text}}</a>
           {% else %}

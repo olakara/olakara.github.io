@@ -35,3 +35,8 @@ gulp.task('styles', function() {
           .pipe(minifyCSS())
           .pipe(gulp.dest(cssDestination));
 });  
+
+gulp.task('default', function() {
+    gulp.run('styles');
+    gulp.run('scripts');  
+});

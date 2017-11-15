@@ -1,0 +1,25 @@
+{
+  "name": "olakara.github.io",
+  "version": "1.0.0",
+  "description": "My personal site built using Jekyll and hosted on Github Pages.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olakara/olakara.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olakara/olakara.github.io/issues"
+  },
+  "homepage": "https://github.com/olakara/olakara.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}
